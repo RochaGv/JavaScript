@@ -17,19 +17,17 @@ describe("index", () => {
     //then
     expect(result).toBe(20);
   });
-});
+  describe("index", () => {
+    it("Calcule a soma de todos os elementos em um array.", () => {
+      //given
+      const entrada = [9, 8, 7, 6];
 
-import { sumArrayElements2 } from ".";
-describe("index", () => {
-  it("Calcule a soma de todos os elementos em um array.", () => {
-    //given
-    const entrada = [9, 8, 7, 6];
+      //when
+      const result = sumArrayElements(entrada);
 
-    //when
-    const result = sumArrayElements2(entrada);
-
-    //then
-    expect(result).toBe(30);
+      //then
+      expect(result).toBe(30);
+    });
   });
 });
 
@@ -45,18 +43,16 @@ describe("index", () => {
     //then
     expect(result).toBe(89.6);
   });
-});
+  describe("index", () => {
+    it("Escreva um programa que converta uma temperatura de Celsius para Fahrenheit e vice-versa.", () => {
+      //given
+      const Celsius = 100;
 
-import { conversor2 } from ".";
-describe("index", () => {
-  it("Escreva um programa que converta uma temperatura de Celsius para Fahrenheit e vice-versa.", () => {
-    //given
-    const Celsius = 100;
+      //when
+      const result = conversor(Celsius);
 
-    //when
-    const result = conversor2(Celsius);
-
-    //then
-    expect(result).toBe(212);
+      //then
+      expect(result).toBe(212);
+    });
   });
 });
