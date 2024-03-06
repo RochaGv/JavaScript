@@ -5,31 +5,58 @@ describe("index", () => {
   });
 });
 
-
 import { sumArrayElements } from ".";
 describe("index", () => {
-    it('Calcule a soma de todos os elementos em um array.', () => {
-        //given
-        const entrada = [2, 3, 4, 5, 6];
+  it("Calcule a soma de todos os elementos em um array.", () => {
+    //given
+    const entrada = [2, 3, 4, 5, 6];
 
-        //when
-        const result = sumArrayElements(entrada);
+    //when
+    const result = sumArrayElements(entrada);
 
-        //then
-        expect(result).toBe(20);
-    });
+    //then
+    expect(result).toBe(20);
+  });
 });
 
 import { sumArrayElements2 } from ".";
 describe("index", () => {
-    it('Calcule a soma de todos os elementos em um array.', () => {
-        //given
-        const entrada = [9, 8, 7, 6];
+  it("Calcule a soma de todos os elementos em um array.", () => {
+    //given
+    const entrada = [9, 8, 7, 6];
 
-        //when
-        const result = sumArrayElements2(entrada);
+    //when
+    const result = sumArrayElements2(entrada);
 
-        //then
-        expect(result).toBe(30);
-    });
+    //then
+    expect(result).toBe(30);
+  });
+});
+
+import { conversor } from ".";
+describe("index", () => {
+  it("Escreva um programa que converta uma temperatura de Celsius para Fahrenheit e vice-versa.", () => {
+    //given
+    const Celsius = 32;
+
+    //when
+    const result = conversor(Celsius);
+
+    //then
+    expect(result).toBe(89.6);
+  });
+});
+
+import { conversor2 } from ".";
+describe("index", () => {
+  it("Escreva um programa que converta uma temperatura de Celsius para Fahrenheit e vice-versa.", () => {
+    //given
+    const Celsius = 100;
+
+    //when
+    const result = conversor2(Celsius);
+
+    //then
+    expect(result).toBe(212);
+  });
 });
